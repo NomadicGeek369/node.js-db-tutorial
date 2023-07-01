@@ -1,0 +1,237 @@
+{
+    "esp32Roof1": {
+        "port": 8097,
+        "saveSensorData": false,
+        "detectObjects": false,
+        "class": "cam-instance",
+        "image": "",
+        "display": "Temp",
+        "commands": [
+            {
+                "id": "RELAY_1",
+                "name": "Left Porch Light",
+                "class": "led-light",
+                "state": 0
+            },
+            {
+                "id": "RELAY_2",
+                "name": "Reverse Camera",
+                "class": "led-light",
+                "state": 0
+            }
+        ]
+    },
+    "esp32Roof2": {
+        "port": 8095,
+        "saveSensorData": false,
+        "detectObjects": false,
+        "class": "cam-instance",
+        "display": "Temp",
+        "commands": [
+            {
+                "id": "RELAY_1",
+                "name": "Right Porch Light",
+                "class": "led-light",
+                "state": 0
+            },
+            {
+                "id": "RELAY_2",
+                "name": "Back Porch Light",
+                "class": "led-light",
+                "state": 0
+            }
+        ]
+    },
+    "esp32cam8": {
+        "port": 8013,
+        "saveSensorData": false,
+        "detectObjects": false,
+        "class": "cam-instance",
+        "display": "Cam #9",
+        "commands": [
+            {
+                "id": "ON_BOARD_LED",
+                "name": "Camera flashlight",
+                "class": "led-light",
+                "state": 0
+            }
+        ]
+    },
+    "esp32cam9": {
+        "port": 8014,
+        "saveSensorData": false,
+        "detectObjects": false,
+        "class": "cam-instance",
+        "display": "Cam #10",
+        "commands": [
+            {
+                "id": "ON_BOARD_LED",
+                "name": "Camera flashlight",
+                "class": "led-light",
+                "state": 0
+            }
+        ]
+    },
+    "esp32cam1": {
+        "port": 8001,
+        "saveSensorData": false,
+        "detectObjects": false,
+        "class": "cam-instance",
+        "display": "Cam #1",
+        "commands": [
+            {
+                "id": "ON_BOARD_LED",
+                "name": "Camera flashlight",
+                "class": "led-light",
+                "state": 0
+            }
+        ]
+    },
+    "esp32cam2": {
+        "port": 8002,
+        "saveSensorData": false,
+        "detectObjects": false,
+        "class": "cam-instance",
+        "display": "Cam #2",
+        "commands": [
+            {
+                "id": "ON_BOARD_LED",
+                "name": "Camera flashlight",
+                "class": "led-light",
+                "state": 0
+            }
+        ]
+    },
+    "esp32cam3": {
+        "port": 8003,
+        "saveSensorData": false,
+        "detectObjects": false,
+        "class": "cam-instance",
+        "display": "Cam #3",
+        "commands": [
+            {
+                "id": "ON_BOARD_LED",
+                "name": "Camera flashlight",
+                "class": "led-light",
+                "state": 0
+            }
+        ]
+    },
+    "esp32cam4": {
+        "port": 8004,
+        "saveSensorData": false,
+        "detectObjects": false,
+        "class": "cam-instance",
+        "display": "Cam #4",
+        "commands": [
+            {
+                "id": "ON_BOARD_LED",
+                "name": "Camera flashlight",
+                "class": "led-light",
+                "state": 0
+            }
+        ]
+    },
+    "esp32cam5": {
+        "port": 8005,
+        "saveSensorData": false,
+        "detectObjects": false,
+        "class": "cam-instance",
+        "display": "Cam #5",
+        "commands": [
+            {
+                "id": "ON_BOARD_LED",
+                "name": "Camera flashlight",
+                "class": "led-light",
+                "state": 0
+            }
+        ]
+    },
+    "esp32cam6": {
+        "port": 8006,
+        "saveSensorData": false,
+        "detectObjects": false,
+        "class": "cam-instance",
+        "display": "Cam #6",
+        "commands": [
+            {
+                "id": "ON_BOARD_LED",
+                "name": "Camera flashlight",
+                "class": "led-light",
+                "state": 0
+            }
+        ]
+    },
+    "esp32cam7": {
+        "port": 8007,
+        "saveSensorData": false,
+        "detectObjects": false,
+        "class": "cam-instance",
+        "display": "Cam #7",
+        "commands": [
+            {
+                "id": "ON_BOARD_LED",
+                "name": "Camera flashlight",
+                "class": "led-light",
+                "state": 0
+            }
+        ]
+    },
+    "freenove": {
+        "port": 8008,
+        "saveSensorData": false,
+        "detectObjects": false,
+        "class": "cam-instance",
+        "display": "Cam #8",
+        "commands": [
+            {
+                "id": "ON_BOARD_LED",
+                "name": "Camera flashlight",
+                "class": "led-light",
+                "state": 0
+            },
+            {
+				"id": "MOTOR_FORWARD",
+				"label": "Forward",
+				"class": "forward-icon"
+            },
+            {
+				"id": "MOTOR_BACKWARD",
+				"label": "Backward",
+				"class": "backward-icon"
+            }
+        ]
+    },
+    "gas1": {
+        "port": 8009,
+        "saveSensorData": true,
+        "detectObjects": false,
+        "display": "Cabin gas",
+        "class": "gas-sensor",
+        "commands": []
+    },
+    "gas2": {
+        "port": 8010,
+        "saveSensorData": true,
+        "display": "Electric gas",
+        "detectObjects": false,
+        "class": "gas-sensor",
+        "commands": []
+    },
+    "gas3": {
+        "port": 8011,
+        "saveSensorData": true,
+        "display": "Front Home gas",
+        "detectObjects": false,
+        "class": "gas-sensor",
+        "commands": []
+    },
+    "gas4": {
+        "port": 8012,
+        "saveSensorData": true,
+        "detectObjects": false,
+        "display": "Back Home gas",
+        "class": "gas-sensor",
+        "commands": []
+    }
+}
