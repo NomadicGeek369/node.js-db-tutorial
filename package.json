@@ -11,11 +11,15 @@
     "mongodb": "^5.1.0",
     "mongoose": "^7.0.3",
     "path": "^0.12.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-jsx": "^1.0.0",
+    "react-use-websocket": "^4.3.1",
     "ws": "^7.5.7"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build-react": "cd public/pages/react_test && npm install && npm run build"
   },
   "author": "Nomadic Geek",
   "license": "ISC",

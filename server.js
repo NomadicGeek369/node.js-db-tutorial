@@ -10,6 +10,7 @@ require('dotenv').config();
 
 const app = express();
 app.use('/static', express.static(path.join(__dirname, 'public')));
+app.use('/react', express.static(path.join(__dirname, 'public/pages/react_test/build')));
 
 const connectedClients = new Set();
 const cores = os.cpus().length;
@@ -126,4 +127,5 @@ wss.on('connection', (ws) => {
 
 app.get('/client', (_req, res) => { res.sendFile(path.resolve(__dirname, './public/pages/client1/client.html')); });
 app.get('/client2', (_req, res) => { res.sendFile(path.resolve(__dirname, './public/pages/client2/client.html')); });
+app.get('/react/*', (_req, res) => {res.sendFile(path.resolve(__dirname, './public/pages/react_test/build/index.html')); });
 app.listen(process.env.CLIENT_HTTP_PORT, () => { console.log(`HTTP server starting on ${process.env.CLIENT_HTTP_PORT} with process ID ${process.pid}`); });
